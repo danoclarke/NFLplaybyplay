@@ -14,7 +14,7 @@ $HADOOP_HOME/bin/hdfs dfs -rm -r $BASEDIR/output
 $HADOOP_HOME/bin/hdfs dfs -rm -r $BASEDIR/salaries
 $HADOOP_HOME/bin/hdfs dfs -put -f input $BASEDIR/input
 $HADOOP_HOME/bin/hdfs dfs -mkdir $BASEDIR/salaries
-$HADOOP_HOME/bin/hdfs dfs -put -f salaries/salaries.csv $BASEDIR/salaries/
+$HADOOP_HOME/bin/hdfs dfs -put -f salaries.csv $BASEDIR/salaries/
 
 #RUN MR
 $HADOOP_HOME/bin/hadoop jar playbyplay.jar PlayByPlayDriver $BASEDIR/input $BASEDIR/output
